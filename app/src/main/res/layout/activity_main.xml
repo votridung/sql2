@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.gamemobile.sql2.MainActivity">
+
+
+    <TextView
+        android:id="@+id/tv_them"
+        android:gravity="center"
+        android:textColor="#150b74"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:text="Thêm món:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:enabled="false"
+        android:id="@+id/edt_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ID" />
+    <EditText
+        android:layout_below="@+id/tv_them"
+        android:id="@+id/edt_tenmon"
+        android:hint="Tên món:"
+        android:textColor="#08144d"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:layout_below="@+id/edt_tenmon"
+        android:id="@+id/edt_nguyenlieu"
+        android:hint="Nguyên Liệu:"
+        android:textColor="#08144d"
+        android:gravity="top"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:layout_below="@+id/edt_nguyenlieu"
+        android:id="@+id/edt_cachlam"
+        android:hint="Cách làm:"
+        android:textColor="#08144d"
+        android:gravity="top"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Save" />
+        <Button
+            android:enabled="false"
+            android:id="@+id/btn_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Update" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_themmon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
